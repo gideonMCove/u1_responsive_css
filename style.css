@@ -11,3 +11,56 @@ img{
 #dog2 {
     display: none
 }
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: aqua;
+    }
+
+    h1 {
+        color: orangered;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display:flex;
+        justify-content: space-around; /*This is great for small screens*/
+    }
+
+    h1{
+        color:hotpink;
+        letter-spacing:0;
+    }
+
+    body {
+        background-color:gold;
+    }
+}
+
+@media screen and (max-width:450px) {
+    nav {
+        flex-direction: column;
+    }
+    img {
+        width: 70%;
+        margin: 4rem;
+    }
+
+    #dog1 {
+        display: none;
+    }
+
+    #dog2{
+        display: block;
+    }
+
+    body {
+        margin: -1000000px;
+    }
+
+}
